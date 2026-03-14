@@ -1,0 +1,176 @@
+body{
+margin:0;
+font-family:sans-serif;
+background:#f3f3f3;
+text-align:center;
+color:#333;
+}
+
+/* halaman cover */
+
+#cover-page{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+/* kartu undangan */
+
+.card{
+width:260px;
+aspect-ratio:13/17;
+overflow:hidden;
+border-radius:12px;
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+background:white;
+transition:transform 0.5s;
+}
+
+.card:hover{
+transform:scale(1.02);
+}
+
+.card img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* tombol buka undangan */
+
+.btn-buka{
+margin-top:30px;
+padding:14px 32px;
+font-size:16px;
+border:none;
+border-radius:30px;
+background:#c8a96a;
+color:white;
+cursor:pointer;
+transition:all 0.3s;
+}
+
+.btn-buka:hover{
+background:#b89550;
+transform:scale(1.05);
+}
+
+/* konten undangan */
+
+#content{
+padding:20px 0;
+}
+
+/* gambar isi */
+
+.section-undangan img,
+.section-tanggal img{
+width:100%;
+max-width:500px;
+display:block;
+margin:0 auto 40px auto;
+border-radius:8px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* lokasi */
+
+.section-lokasi{
+padding:40px 20px 60px 20px;
+}
+
+.section-lokasi h2{
+margin-bottom:20px;
+font-weight:600;
+}
+
+/* tombol maps */
+
+.btn-maps{
+display:inline-block;
+padding:14px 28px;
+background:#c8a96a;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-size:16px;
+transition:all 0.3s;
+}
+
+.btn-maps:hover{
+background:#b89550;
+transform:scale(1.05);
+}
+
+/* tombol acara */
+
+.section-tombol{
+margin:40px 0;
+}
+
+.btn-acara{
+padding:14px 30px;
+font-size:16px;
+border:none;
+border-radius:30px;
+background:#c8a96a;
+color:white;
+cursor:pointer;
+transition:all 0.3s;
+}
+
+.btn-acara:hover{
+background:#b89550;
+transform:scale(1.05);
+}
+
+/* gambar tanggal acara */
+
+#section-acara img{
+width:100%;
+max-width:500px;
+display:block;
+margin:0 auto 40px auto;
+border-radius:8px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* efek klik tombol */
+
+.btn-buka,
+.btn-acara,
+.btn-maps{
+position:relative;
+overflow:hidden;
+}
+
+/* bunga jatuh */
+
+.bunga{
+position:fixed;
+top:-30px;
+font-size:22px;
+pointer-events:none;
+z-index:999;
+
+animation:jatuh linear forwards;
+}
+
+/* animasi jatuh */
+
+@keyframes jatuh{
+
+0%{
+transform:translateY(-50px) rotate(0deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+opacity:0;
+}
+
+}

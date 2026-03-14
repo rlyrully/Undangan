@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div class="mobile-wrapper">
+</div>
+
+<!-- COVER -->
+
+<section id="cover-page">
+
+    <div class="card">
+        <img src="cover.jpg" alt="Cover Undangan">
+    </div>
+
+    <button class="btn-buka" onclick="bukaUndangan()">
+        Buka Undangan
+    </button>
+
+</section>
+
+
+<!-- KONTEN UNDANGAN -->
+
+<main id="content" style="display:none;">
+
+    <!-- ISI UNDANGAN -->
+
+    <section class="section-undangan">
+        <img src="isi.jpg" alt="Isi Undangan">
+    </section>
+
+
+    <!-- TOMBOL ACARA -->
+
+    <section class="section-tombol">
+        <button class="btn-acara" onclick="lihatAcara()">
+            Acara & Resepsi
+        </button>
+    </section>
+
+
+    <!-- TANGGAL ACARA (muncul setelah tombol diklik) -->
+
+    <section id="section-acara" style="display:none;">
+        <img src="tanggal.jpg" alt="Tanggal Acara">
+    </section>
+    <section id="section-acara" style="display:none;">
+        <img src="cover.jpg" alt="cover">
+    </section>
+
+
+    <!-- LOKASI (PALING BAWAH) -->
+
+    <section class="section-lokasi">
+
+        <h2>Lokasi Acara</h2>
+
+        <a 
+        href="https://maps.app.goo.gl/oQLuBZ1WCKwUJaK46" 
+        target="_blank" 
+        class="btn-maps">
+
+        Buka Google Maps
+
+        </a>
+
+    </section>
+
+</main>
+
+
+<!-- AUDIO MUSIK -->
+
+<audio id="musik" src="music.mp3" loop></audio>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

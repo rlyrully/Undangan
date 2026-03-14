@@ -2,89 +2,95 @@
 <html lang="id">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Wedding Of Serly & Maolan</title>
-<!-- Open Graph untuk preview link -->
-<meta property="og:title" content="Undangan Pernikahan">
-<meta property="og:description" content="Undangan Pernikahan Kami">
-<meta property="og:image" content="https://username.github.io/nama-repo/cover.jpg">
-<meta property="og:url" content="https://username.github.io/nama-repo/">
+
+<!-- Open Graph -->
+
+<meta property="og:title" content="Wedding Of Serly & Maolan">
+<meta property="og:description" content="Undangan Pernikahan Serly & Maolan">
+<meta property="og:image" content="https://rlyrully.github.io/Undangan/cover.jpg">
+<meta property="og:url" content="https://rlyrully.github.io/Undangan/">
 <meta property="og:type" content="website">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+
 <div class="mobile-wrapper">
-</div>
 
 <!-- COVER -->
 
 <section id="cover-page">
 
-    <div class="card">
-        <img src="cover.jpg" alt="Cover Undangan">
-    </div>
+<div class="card">
+<img src="cover.jpg" alt="Cover Undangan">
+</div>
 
-    <button class="btn-buka" onclick="bukaUndangan()">
-        Buka Undangan
-    </button>
+<button class="btn-buka" onclick="bukaUndangan()">
+Buka Undangan
+</button>
 
 </section>
 
 
-<!-- KONTEN UNDANGAN -->
+<!-- KONTEN -->
 
 <main id="content" style="display:none;">
 
-    <!-- ISI UNDANGAN -->
+<!-- ISI UNDANGAN -->
 
-    <section class="section-undangan">
-        <img src="isi.jpg" alt="Isi Undangan">
-    </section>
-
-
-    <!-- TOMBOL ACARA -->
-
-    <section class="section-tombol">
-        <button class="btn-acara" onclick="lihatAcara()">
-            Acara & Resepsi
-        </button>
-    </section>
+<section class="section-undangan">
+<img src="isi.jpg" alt="Isi Undangan">
+</section>
 
 
-    <!-- TANGGAL ACARA (muncul setelah tombol diklik) -->
+<!-- TOMBOL ACARA -->
 
-    <section id="section-acara" style="display:none;">
-        <img src="tanggal.jpg" alt="Tanggal Acara">
-    </section>
-    <section id="section-acara" style="display:none;">
-        <img src="cover.jpg" alt="cover">
-    </section>
+<section class="section-tombol">
+
+<button class="btn-acara" onclick="lihatAcara()">
+Acara & Resepsi
+</button>
+
+</section>
 
 
-    <!-- LOKASI (PALING BAWAH) -->
+<!-- TANGGAL ACARA -->
 
-    <section class="section-lokasi">
+<section id="section-acara" style="display:none;">
+<img src="tanggal.jpg" alt="Tanggal Acara">
+</section>
 
-        <h2>Lokasi Acara</h2>
 
-        <a 
-        href="https://maps.app.goo.gl/oQLuBZ1WCKwUJaK46" 
-        target="_blank" 
-        class="btn-maps">
+<!-- LOKASI -->
 
-        Buka Google Maps
+<section class="section-lokasi">
 
-        </a>
+<h2>Lokasi Acara</h2>
 
-    </section>
+<a 
+href="https://maps.app.goo.gl/oQLuBZ1WCKwUJaK46"
+target="_blank"
+class="btn-maps">
+
+Buka Google Maps
+
+</a>
+
+</section>
 
 </main>
 
+</div>
 
-<!-- AUDIO MUSIK -->
+
+<!-- AUDIO -->
 
 <audio id="musik" src="music.mp3" loop></audio>
 
